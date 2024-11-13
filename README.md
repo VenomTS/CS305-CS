@@ -10,14 +10,15 @@ A console-based application written in pure C# (Version 12) that simulates a ban
 
 ## Requirements <a name="requirements"></a>
 .NET Runtime 8.0 - [Download Here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) <br/>
-(Optional - Only for Contributors) Git - [Download Here](https://git-scm.com/downloads) <br/>
-(Optional - Only for Contributors) IDE for C# - [Download Here (Rider)](https://www.jetbrains.com/rider/download/)
+File Manager - [Download Here (7zip)](https://www.7-zip.org/)
+(Optional) Git - [Download Here](https://git-scm.com/downloads) <br/>
+(Optional) IDE for C# - [Download Here (Rider)](https://www.jetbrains.com/rider/download/)
 
 ## Installation <a name="installation"></a>
 Way 1:
 1. Download .NET Runtime 8.0 from [Requirements](#requirements)
 2. Download the latest release of the program from [Here](https://github.com/VenomTS/CS305-CS/releases)
-3. Extract the downloaded program using file manager such as [7zip](https://www.7-zip.org/)
+3. Extract the downloaded program using file manager [Requirements](#requirements)
 4. Run the "Banking System.exe" inside the "Banking System" folder that you extracted
 
  Way 2:
