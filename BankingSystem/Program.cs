@@ -283,13 +283,11 @@ class Program
     {
         if (account is null) return; // Happy Compiler, Happy Life
         Console.Clear();
-        var str = $"Your account is currently {(account.IsFrozen ? "Frozen" : "Active")}\n" +
-                  $"Do you want to {(account.IsFrozen ? "re-activate" : "freeze")} it?\n" +
-                  $"Write yes to confirm / no to deny";
-        Console.WriteLine(str);
-        var answer = Console.ReadLine();
-        if (answer is null || answer.ToLower().Equals("no")) return;
-        account.IsFrozen = !account.IsFrozen;
+
+        var option = SelectOption(["Freeze Account", "Unfreeze Account"]);
+
+        account.IsFrozen = option == 0;
+        
         Console.WriteLine($"You successfully {(account.IsFrozen ? "froze" : "re-activated")} your account!");
         GoBack();
     }
@@ -325,6 +323,7 @@ class Program
     {
         options = EvenlySpaceOptions(options);
         var selectedOption = 0;
+        var size = options.Length;
         
         Console.Clear();
         PrintOptions(selectedOption, options);
@@ -334,9 +333,9 @@ class Program
             var pressedKey = Console.ReadKey(true).Key;
 
             if (pressedKey == ConsoleKey.LeftArrow)
-                selectedOption = selectedOption > 0 ? selectedOption - 1 : 3;
+                selectedOption = selectedOption > 0 ? selectedOption - 1 : size - 1;
             else if (pressedKey == ConsoleKey.RightArrow)
-                selectedOption = (selectedOption + 1) % 4;
+                selectedOption = (selectedOption + 1) % size;
             else if (pressedKey == ConsoleKey.Enter)
                 return selectedOption;
             else continue;
@@ -350,10 +349,8 @@ class Program
     {
         for (var row = 0; row < 5; row++)
         {
-            PrintRow(row, options[0], selectedOption == 0);
-            PrintRow(row, options[1], selectedOption == 1);
-            PrintRow(row, options[2], selectedOption == 2);
-            PrintRow(row, options[3], selectedOption == 3);
+            for(var option = 0; option < options.Length; option++)
+                PrintRow(row, options[option], selectedOption == option);
             Console.WriteLine("");
         }
     }
@@ -394,7 +391,7 @@ class Program
 
         Console.ForegroundColor = ConsoleColor.White;
     }
-
+    
     private static string[] EvenlySpaceOptions(string[] options)
     {
         var longest = options.Select(option => option.Length).Max();
@@ -403,7 +400,7 @@ class Program
 
         var currOp = 0;
 
-        while (currOp < 4)
+        while (currOp < options.Length)
         {
             while (options[currOp].Length < longest)
             {

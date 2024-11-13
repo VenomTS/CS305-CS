@@ -12,5 +12,6 @@ Global
 		{EC610D26-DCAA-4981-8F71-31C409BA30FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC610D26-DCAA-4981-8F71-31C409BA30FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC610D26-DCAA-4981-8F71-31C409BA30FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC610D26-DCAA-4981-8F71-31C409BA30FE}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
