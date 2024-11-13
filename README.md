@@ -10,7 +10,7 @@ A console-based application written in pure C# (Version 12) that simulates a ban
 
 ## Requirements <a name="requirements"></a>
 .NET Runtime 8.0 - [Download Here](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) <br/>
-File Manager - [Download Here (7zip)](https://www.7-zip.org/)
+File Manager - [Download Here (7zip)](https://www.7-zip.org/) <br/>
 (Optional) Git - [Download Here](https://git-scm.com/downloads) <br/>
 (Optional) IDE for C# - [Download Here (Rider)](https://www.jetbrains.com/rider/download/)
 
