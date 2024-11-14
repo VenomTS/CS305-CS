@@ -31,7 +31,7 @@ Way 1:
  7. Run the program in your IDE
 
 ## Usage
-Once you run the program, the terminal will open with four options. <br/>
+Once you run the program, the terminal will open with several options. <br/>
 One of the options will be in ![#00FF00](https://placehold.co/15x15/00ff00/00ff00.png) **GREEN** color while the rest will be in ![#FF0000](https://placehold.co/15x15/ff0000/ff0000.png) **RED** color. <br/>
 The ![#00FF00](https://placehold.co/15x15/00ff00/00ff00.png) **GREEN** option is where your ***CURSOR*** is. <br/>
 To move to the other options, use either **&#8592;** or **&#8594;**. <br/>
