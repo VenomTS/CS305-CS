@@ -1,5 +1,5 @@
 # Banking System
-A console-based application written in pure C# (Version 12) that simulates a bank and user's interactions with the bank
+A console-based application written in C# (Version 12) that uses JSON as a database with a goal of simulating a bank and user's interactions with the bank
 
 ## Table of Contents
 - [Requirements](#requirements)
